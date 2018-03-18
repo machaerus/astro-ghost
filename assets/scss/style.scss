@@ -1,0 +1,285 @@
+$basefont: "Rubik";
+$bodyfont: "Libre Baskerville";
+
+body {
+	background: #fff;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $bodyfont;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// INDEX
+
+.site-header-index {
+	flex: 1 0 45%;
+	height: 100vh;
+	background-color: black;
+	background-image: url("../images/astro-glyph.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	position: relative;
+
+	.site-header-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: center;
+		padding: 50px;
+		color: white;
+
+		h1 {
+			font-family: $bodyfont;
+			font-style: italic;
+			font-size: 50px;
+			font-weight: 100;
+		}
+	}
+
+	.site-nav {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+	}
+}
+
+.site-main-index {
+	flex: 1 0 55%;
+	height: 100vh;
+	background: #fff;
+	box-sizing: border-box;
+
+	.inner {
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	.post-feed {
+
+		.post-card {
+
+			height: 150px;
+			width: 100%;
+			margin: 0;
+			float: left;
+			clear: both;
+			display: flex;
+
+			&:nth-child(5n-0) { .post-card-tile { background: #E54661; } }
+			&:nth-child(5n-1) { .post-card-tile { background: #FFA644; } }
+			&:nth-child(5n-2) { .post-card-tile { background: #998A2F; } }
+			&:nth-child(5n-3) { .post-card-tile { background: #2C594F; } }
+			&:nth-child(5n-4) { .post-card-tile { background: #002D40; } }
+
+			&:hover {
+				.post-card-content {
+					border-right: 20px solid black;
+					background: #efefef;
+				}
+			}
+
+			.post-card-tile {
+				flex: 0 0 150px;
+				box-sizing: border-box;
+			}
+			.post-card-content {
+				flex: 1 1 auto;
+				padding: 20px 50px;
+				border-bottom: 1px solid #dedede;
+
+				.post-card-content-link {
+					text-decoration: none;
+					h2 {
+						margin: 20px 0 10px 0;
+						font-weight: 600;
+						font-size: 28px;
+						font-family: $basefont;
+					}
+				}
+
+				.post-card-meta {
+					margin: 0;
+					font-size: 14px;
+					color: #666;
+				}
+			}
+		}
+	}
+}
+
+// SINGLE ------------------------------------------------------------------------------
+
+.site-header-single {
+	background: black;
+	box-sizing: border-box;
+	flex: 1 0 100%;
+
+	.inner {
+		width: 700px;
+		margin: 0 auto;
+		position: relative;
+
+		.site-title {
+			color: white;
+			font-family: $bodyfont;
+			font-style: italic;
+			font-weight: normal;
+			font-size: 26px;
+			line-height: 50px;
+		}
+	}
+}
+
+.site-main-single {
+	flex: 1 0 100%;
+	box-sizing: border-box;
+
+	.inner {
+		width: 900px;
+		margin: 50px auto;
+
+		.post-full-header {
+
+			background: #E54661;
+			padding: 80px 100px 30px;
+			margin: 0 0 50px; 
+			-webkit-border-radius: 7px;
+			border-radius: 7px;
+
+			.post-full-meta {
+				font-family: $basefont;
+				font-size: 20px;
+				color: white;
+			}
+
+			.post-full-title {
+				font-family: $basefont;
+				font-size: 65px;
+				font-weight: normal;
+				margin-top: 30px;
+				margin-bottom: 60px;
+				color: white;
+			}
+		}
+
+		.post-full-content {
+			padding: 0 100px;
+			font-family: $bodyfont;
+			font-size: 18px;
+			line-height: 28px;
+
+			img {
+				max-width: 100%;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+			}
+
+			hr {
+				height: 2px;
+				padding: 0;
+				margin: 0;
+				border: 0;
+				background: #ddd;
+			}
+		}
+
+		.post-full-footer {
+
+			background: #efefef;
+			padding: 20px 50px 50px;
+			margin: 40px 100px;
+			box-sizing: border-box;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+
+		}
+	}
+}
+
+.read-next {
+	flex: 1 0 100%;
+	
+
+	.read-next-feed {
+		display: flex;
+		justify-content: center;
+	}
+
+	.next {
+		text-align: right;
+		order: 2;
+		// border-left: 1px solid #dedede;
+		.post-card-tile { order: 2; background: #998A2F; }
+		.post-card-content { order: 1; }
+	}
+
+	.prev {
+		text-align: left;
+		order: 1;
+		border-right: 1px solid #dedede;
+		.post-card-tile { order: 1; background: #2C594F; }
+		.post-card-content { order: 2; }
+	}
+
+	.next, .prev {
+		flex: 1 0 50%;
+		box-sizing: border-box;
+
+		.post-card {
+			display: flex;
+
+			&:hover {
+				.post-card-content {
+					background: #efefef;
+				}
+			}
+
+			.post-card-tile {
+				flex: 0 0 150px;
+				box-sizing: border-box;
+			}
+			.post-card-content {
+				flex: 1 1 auto;
+				padding: 40px 50px;
+				border-top: 1px solid #dedede;
+
+				.post-card-content-link {
+					text-decoration: none;
+					h2 {
+						margin: 20px 0 10px 0;
+						font-weight: 600;
+						font-size: 28px;
+						font-family: $basefont;
+					}
+				}
+
+				.post-card-meta {
+					margin: 0;
+					font-size: 14px;
+					color: #666;
+				}
+
+			}
+
+
+		}
+
+		
+	}
+
+}

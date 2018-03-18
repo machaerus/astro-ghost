@@ -1,0 +1,201 @@
+body {
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Libre Baskerville"; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.site-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
+.site-header-index {
+  flex: 1 0 45%;
+  height: 100vh;
+  background-color: black;
+  background-image: url("../images/astro-glyph.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  position: relative; }
+  .site-header-index .site-header-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 50px;
+    color: white; }
+    .site-header-index .site-header-content h1 {
+      font-family: "Libre Baskerville";
+      font-style: italic;
+      font-size: 50px;
+      font-weight: 100; }
+  .site-header-index .site-nav {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center; }
+
+.site-main-index {
+  flex: 1 0 55%;
+  height: 100vh;
+  background: #fff;
+  box-sizing: border-box; }
+  .site-main-index .inner {
+    height: 100%;
+    overflow-y: scroll; }
+  .site-main-index .post-feed .post-card {
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    float: left;
+    clear: both;
+    display: flex; }
+    .site-main-index .post-feed .post-card:nth-child(5n-0) .post-card-tile {
+      background: #E54661; }
+    .site-main-index .post-feed .post-card:nth-child(5n-1) .post-card-tile {
+      background: #FFA644; }
+    .site-main-index .post-feed .post-card:nth-child(5n-2) .post-card-tile {
+      background: #998A2F; }
+    .site-main-index .post-feed .post-card:nth-child(5n-3) .post-card-tile {
+      background: #2C594F; }
+    .site-main-index .post-feed .post-card:nth-child(5n-4) .post-card-tile {
+      background: #002D40; }
+    .site-main-index .post-feed .post-card:hover .post-card-content {
+      border-right: 20px solid black;
+      background: #efefef; }
+    .site-main-index .post-feed .post-card .post-card-tile {
+      flex: 0 0 150px;
+      box-sizing: border-box; }
+    .site-main-index .post-feed .post-card .post-card-content {
+      flex: 1 1 auto;
+      padding: 20px 50px;
+      border-bottom: 1px solid #dedede; }
+      .site-main-index .post-feed .post-card .post-card-content .post-card-content-link {
+        text-decoration: none; }
+        .site-main-index .post-feed .post-card .post-card-content .post-card-content-link h2 {
+          margin: 20px 0 10px 0;
+          font-weight: 600;
+          font-size: 28px;
+          font-family: "Rubik"; }
+      .site-main-index .post-feed .post-card .post-card-content .post-card-meta {
+        margin: 0;
+        font-size: 14px;
+        color: #666; }
+
+.site-header-single {
+  background: black;
+  box-sizing: border-box;
+  flex: 1 0 100%; }
+  .site-header-single .inner {
+    width: 700px;
+    margin: 0 auto;
+    position: relative; }
+    .site-header-single .inner .site-title {
+      color: white;
+      font-family: "Libre Baskerville";
+      font-style: italic;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 50px; }
+
+.site-main-single {
+  flex: 1 0 100%;
+  box-sizing: border-box; }
+  .site-main-single .inner {
+    width: 900px;
+    margin: 50px auto; }
+    .site-main-single .inner .post-full-header {
+      background: #E54661;
+      padding: 80px 100px 30px;
+      margin: 0 0 50px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px; }
+      .site-main-single .inner .post-full-header .post-full-meta {
+        font-family: "Rubik";
+        font-size: 20px;
+        color: white; }
+      .site-main-single .inner .post-full-header .post-full-title {
+        font-family: "Rubik";
+        font-size: 65px;
+        font-weight: normal;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color: white; }
+    .site-main-single .inner .post-full-content {
+      padding: 0 100px;
+      font-family: "Libre Baskerville";
+      font-size: 18px;
+      line-height: 28px; }
+      .site-main-single .inner .post-full-content img {
+        max-width: 100%;
+        -webkit-border-radius: 5px;
+        border-radius: 5px; }
+      .site-main-single .inner .post-full-content hr {
+        height: 2px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: #ddd; }
+    .site-main-single .inner .post-full-footer {
+      background: #efefef;
+      padding: 20px 50px 50px;
+      margin: 40px 100px;
+      box-sizing: border-box;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+
+.read-next {
+  flex: 1 0 100%; }
+  .read-next .read-next-feed {
+    display: flex;
+    justify-content: center; }
+  .read-next .next {
+    text-align: right;
+    order: 2; }
+    .read-next .next .post-card-tile {
+      order: 2;
+      background: #998A2F; }
+    .read-next .next .post-card-content {
+      order: 1; }
+  .read-next .prev {
+    text-align: left;
+    order: 1;
+    border-right: 1px solid #dedede; }
+    .read-next .prev .post-card-tile {
+      order: 1;
+      background: #2C594F; }
+    .read-next .prev .post-card-content {
+      order: 2; }
+  .read-next .next, .read-next .prev {
+    flex: 1 0 50%;
+    box-sizing: border-box; }
+    .read-next .next .post-card, .read-next .prev .post-card {
+      display: flex; }
+      .read-next .next .post-card:hover .post-card-content, .read-next .prev .post-card:hover .post-card-content {
+        background: #efefef; }
+      .read-next .next .post-card .post-card-tile, .read-next .prev .post-card .post-card-tile {
+        flex: 0 0 150px;
+        box-sizing: border-box; }
+      .read-next .next .post-card .post-card-content, .read-next .prev .post-card .post-card-content {
+        flex: 1 1 auto;
+        padding: 40px 50px;
+        border-top: 1px solid #dedede; }
+        .read-next .next .post-card .post-card-content .post-card-content-link, .read-next .prev .post-card .post-card-content .post-card-content-link {
+          text-decoration: none; }
+          .read-next .next .post-card .post-card-content .post-card-content-link h2, .read-next .prev .post-card .post-card-content .post-card-content-link h2 {
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+            font-size: 28px;
+            font-family: "Rubik"; }
+        .read-next .next .post-card .post-card-content .post-card-meta, .read-next .prev .post-card .post-card-content .post-card-meta {
+          margin: 0;
+          font-size: 14px;
+          color: #666; }

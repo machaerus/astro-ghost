@@ -1,0 +1,27 @@
+{
+  "name": "astrolabium",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.hbs",
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "email": "machaerus@pm.me"
+  },
+  "config": {
+    "posts_per_page": 1000
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
