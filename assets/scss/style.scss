@@ -156,7 +156,7 @@ a {
 		.post-full-header {
 
 			background: #E54661;
-			padding: 50px 50px 10px;
+			padding: 40px 50px 10px;
 			margin: 0 50px 50px; 
 			-webkit-border-radius: 7px;
 			border-radius: 7px;
@@ -171,8 +171,8 @@ a {
 				font-family: $basefont;
 				font-size: 45px;
 				font-weight: normal;
-				margin-top: 30px;
-				margin-bottom: 60px;
+				margin-top: 10px;
+				margin-bottom: 30px;
 				color: white;
 			}
 		}
@@ -219,6 +219,53 @@ a {
 			box-sizing: border-box;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
+		}
+
+		#isso-thread {
+			margin: 40px 100px;
+			box-sizing: border-box;
+
+			.textarea-wrapper {
+				margin: 0 0 10px;
+				.textarea {
+					padding: 1em;
+					font-family: $basefont;
+					font-size: 15px;
+					line-height: 24px;
+					min-height: 100px;
+				}
+			}
+
+			.auth-section {
+				.input-wrapper {
+					margin-right: 10px;
+					input {
+						padding: 1em;
+						font-size: 15px;
+						font-family: $basefont;
+						line-height: 24px;
+					}
+				}
+
+				.post-action {
+					input {
+						padding: 1em;
+						line-height: 24px;
+						font-size: 15px;
+						font-family: $basefont;
+						background: #ddd;
+						border: 0;
+						color: #666;
+
+						&:hover {
+							background: #FFA644;
+							color: white;
+						}
+
+					}
+				}
+			}
+
 
 		}
 	}

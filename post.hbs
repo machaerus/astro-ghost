@@ -62,7 +62,9 @@ into the {body} of the default.hbs template --}}
 			</footer>
 
 			{{#is "post, page"}}
-				<script data-isso="https://wiruje-astrolabium.pl/isso/" 
+				<script data-isso="https://wiruje-astrolabium.pl/isso/"
+						data-isso-avatar="false"
+						data-isso-lang="pl"
 						src="https://wiruje-astrolabium.pl/isso/js/embed.min.js">
 				</script>
 				<section id="isso-thread"></section>
@@ -184,6 +186,8 @@ $(document).ready(function () {
 	window.addEventListener('resize', onResize, false);
 
 	update();
+
+	// $("#isso-thread input[name='author']").attr("placeholder", "Imię");
 });
 </script>
 {{/contentFor}}
