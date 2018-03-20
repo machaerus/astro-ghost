@@ -9,7 +9,8 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 1px solid black; }
 
 .site-wrapper {
   display: flex;
@@ -158,7 +159,19 @@ a {
       margin: 40px 100px;
       box-sizing: border-box;
       -webkit-border-radius: 5px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      line-height: 26px;
+      font-family: "Rubik"; }
+      .site-main-single .inner .post-full-footer .author-card-contact ul {
+        margin: 0;
+        padding: 0; }
+        .site-main-single .inner .post-full-footer .author-card-contact ul li {
+          padding: 0;
+          margin: 0;
+          list-style: none; }
+          .site-main-single .inner .post-full-footer .author-card-contact ul li pre {
+            display: inline-block;
+            margin: 0 10px; }
     .site-main-single .inner #isso-thread {
       margin: 40px 100px;
       box-sizing: border-box; }
