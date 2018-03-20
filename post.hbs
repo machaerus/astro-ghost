@@ -61,6 +61,13 @@ into the {body} of the default.hbs template --}}
 				{{/author}}
 			</footer>
 
+			{{#is "post, page"}}
+				<script data-isso="https://wiruje-astrolabium.pl/isso/" 
+						src="https://wiruje-astrolabium.pl/isso/js/embed.min.js">
+				</script>
+				<section id="isso-thread"></section>
+			{{/is}}
+
 			{{!--
 
 			If you use Disqus comments, just uncomment this block.

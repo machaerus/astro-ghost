@@ -82,8 +82,8 @@ a {
         text-decoration: none; }
         .site-main-index .post-feed .post-card .post-card-content .post-card-content-link h2 {
           margin: 20px 0 10px 0;
-          font-weight: 600;
-          font-size: 28px;
+          font-weight: 500;
+          font-size: 23px;
           font-family: "Rubik"; }
       .site-main-index .post-feed .post-card .post-card-content .post-card-meta {
         margin: 0;
@@ -114,8 +114,8 @@ a {
     margin: 50px auto; }
     .site-main-single .inner .post-full-header {
       background: #E54661;
-      padding: 80px 100px 30px;
-      margin: 0 0 50px;
+      padding: 50px 50px 10px;
+      margin: 0 50px 50px;
       -webkit-border-radius: 7px;
       border-radius: 7px; }
       .site-main-single .inner .post-full-header .post-full-meta {
@@ -124,7 +124,7 @@ a {
         color: white; }
       .site-main-single .inner .post-full-header .post-full-title {
         font-family: "Rubik";
-        font-size: 65px;
+        font-size: 45px;
         font-weight: normal;
         margin-top: 30px;
         margin-bottom: 60px;
@@ -144,6 +144,14 @@ a {
         margin: 0;
         border: 0;
         background: #ddd; }
+      .site-main-single .inner .post-full-content pre code {
+        font-family: "Libre Baskerville";
+        font-style: italic;
+        padding: 30px; }
+      .site-main-single .inner .post-full-content p {
+        margin: 0; }
+      .site-main-single .inner .post-full-content p + p {
+        text-indent: 2em; }
     .site-main-single .inner .post-full-footer {
       background: #efefef;
       padding: 20px 50px 50px;
@@ -162,7 +170,7 @@ a {
     order: 2; }
     .read-next .next .post-card-tile {
       order: 2;
-      background: #998A2F; }
+      background: #FFA644; }
     .read-next .next .post-card-content {
       order: 1; }
   .read-next .prev {
@@ -171,7 +179,7 @@ a {
     border-right: 1px solid #dedede; }
     .read-next .prev .post-card-tile {
       order: 1;
-      background: #2C594F; }
+      background: #FFA644; }
     .read-next .prev .post-card-content {
       order: 2; }
   .read-next .next, .read-next .prev {
@@ -191,9 +199,9 @@ a {
         .read-next .next .post-card .post-card-content .post-card-content-link, .read-next .prev .post-card .post-card-content .post-card-content-link {
           text-decoration: none; }
           .read-next .next .post-card .post-card-content .post-card-content-link h2, .read-next .prev .post-card .post-card-content .post-card-content-link h2 {
-            margin: 20px 0 10px 0;
-            font-weight: 600;
-            font-size: 28px;
+            margin: 10px 0 10px 0;
+            font-weight: 500;
+            font-size: 23px;
             font-family: "Rubik"; }
         .read-next .next .post-card .post-card-content .post-card-meta, .read-next .prev .post-card .post-card-content .post-card-meta {
           margin: 0;

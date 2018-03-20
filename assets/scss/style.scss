@@ -106,8 +106,8 @@ a {
 					text-decoration: none;
 					h2 {
 						margin: 20px 0 10px 0;
-						font-weight: 600;
-						font-size: 28px;
+						font-weight: 500;
+						font-size: 23px;
 						font-family: $basefont;
 					}
 				}
@@ -156,8 +156,8 @@ a {
 		.post-full-header {
 
 			background: #E54661;
-			padding: 80px 100px 30px;
-			margin: 0 0 50px; 
+			padding: 50px 50px 10px;
+			margin: 0 50px 50px; 
 			-webkit-border-radius: 7px;
 			border-radius: 7px;
 
@@ -169,7 +169,7 @@ a {
 
 			.post-full-title {
 				font-family: $basefont;
-				font-size: 65px;
+				font-size: 45px;
 				font-weight: normal;
 				margin-top: 30px;
 				margin-bottom: 60px;
@@ -195,6 +195,19 @@ a {
 				margin: 0;
 				border: 0;
 				background: #ddd;
+			}
+
+			pre code {
+				font-family: $bodyfont;
+				font-style: italic;
+				padding: 30px;
+			}
+
+			p {
+				margin: 0;
+			}
+			p+p {
+				text-indent: 2em;
 			}
 		}
 
@@ -224,7 +237,7 @@ a {
 		text-align: right;
 		order: 2;
 		// border-left: 1px solid #dedede;
-		.post-card-tile { order: 2; background: #998A2F; }
+		.post-card-tile { order: 2; background: #FFA644; }
 		.post-card-content { order: 1; }
 	}
 
@@ -232,7 +245,7 @@ a {
 		text-align: left;
 		order: 1;
 		border-right: 1px solid #dedede;
-		.post-card-tile { order: 1; background: #2C594F; }
+		.post-card-tile { order: 1; background: #FFA644; }
 		.post-card-content { order: 2; }
 	}
 
@@ -261,9 +274,9 @@ a {
 				.post-card-content-link {
 					text-decoration: none;
 					h2 {
-						margin: 20px 0 10px 0;
-						font-weight: 600;
-						font-size: 28px;
+						margin: 10px 0 10px 0;
+						font-weight: 500;
+						font-size: 23px;
 						font-family: $basefont;
 					}
 				}
