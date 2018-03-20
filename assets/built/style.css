@@ -140,15 +140,21 @@ a {
         -webkit-border-radius: 5px;
         border-radius: 5px; }
       .site-main-single .inner .post-full-content hr {
-        height: 2px;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        background: #ddd; }
+        margin: 48px 0 72px;
+        height: 0;
+        border: 0; }
+      .site-main-single .inner .post-full-content hr:before {
+        content: '\2767';
+        font-family: "Playfair Display", Georgia, serif;
+        display: block;
+        text-align: center;
+        color: #bbb;
+        font-size: 36px; }
       .site-main-single .inner .post-full-content pre code {
         font-family: "Libre Baskerville";
         font-style: italic;
-        padding: 30px; }
+        padding: 100px 30px;
+        text-indent: 0 !important; }
       .site-main-single .inner .post-full-content p {
         margin: 0; }
       .site-main-single .inner .post-full-content p + p {
