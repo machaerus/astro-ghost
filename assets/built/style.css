@@ -5,7 +5,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Libre Baskerville"; }
+  font-family: "Libre Baskerville";
+  font-size: 18px; }
 
 a {
   color: inherit;
@@ -165,6 +166,8 @@ a {
         margin: 0; }
       .site-main-single .inner .post-full-content p + p {
         text-indent: 2em; }
+      .site-main-single .inner .post-full-content blockquote {
+        font-size: 90%; }
     .site-main-single .inner .post-full-footer-wrapper {
       width: 100%;
       background: #efefef; }
@@ -277,7 +280,8 @@ a {
   box-sizing: border-box;
   flex: 1 0 100%;
   display: flex;
-  color: white; }
+  color: white;
+  font-size: 16px; }
   .site-full-colophon .copyright-info {
     flex: 1 0 50%;
     line-height: 24px; }
