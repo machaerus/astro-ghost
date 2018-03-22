@@ -414,3 +414,29 @@ pre code {
 	}
 
 }
+
+.site-full-colophon {
+
+	// height: 3 * $baseline;
+	background: black;
+	padding: $baseline 1.5*$baseline;
+	box-sizing: border-box;
+	flex: 1 0 100%;
+	display: flex;
+	color: white;
+
+	.copyright-info {
+		flex: 1 0 50%;
+		line-height: $baseline;
+	}
+
+	.rss {
+		flex: 1 0 50%;
+		line-height: $baseline;
+		text-align: right;
+		a {
+			text-decoration: none;
+			border: 0;
+		}
+	}
+}

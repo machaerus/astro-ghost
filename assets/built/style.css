@@ -270,3 +270,21 @@ a {
           margin: 0;
           font-size: 14px;
           color: slategray; }
+
+.site-full-colophon {
+  background: black;
+  padding: 24px 36px;
+  box-sizing: border-box;
+  flex: 1 0 100%;
+  display: flex;
+  color: white; }
+  .site-full-colophon .copyright-info {
+    flex: 1 0 50%;
+    line-height: 24px; }
+  .site-full-colophon .rss {
+    flex: 1 0 50%;
+    line-height: 24px;
+    text-align: right; }
+    .site-full-colophon .rss a {
+      text-decoration: none;
+      border: 0; }
