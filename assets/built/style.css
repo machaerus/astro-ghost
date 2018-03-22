@@ -180,11 +180,16 @@ a {
         .site-main-single .inner .post-full-footer .author-card-contact ul li {
           padding: 0;
           margin: 0;
-          list-style: none; }
-          .site-main-single .inner .post-full-footer .author-card-contact ul li pre {
-            font-weigth: 100;
-            display: inline-block;
-            margin: 0 5px; }
+          list-style: none;
+          color: slategray; }
+          .site-main-single .inner .post-full-footer .author-card-contact ul li a {
+            color: #111; }
+          .site-main-single .inner .post-full-footer .author-card-contact ul li span[class*='socicon-'] {
+            line-height: 26px;
+            font-size: 16px;
+            position: relative;
+            bottom: -2px;
+            margin-right: 4px; }
     .site-main-single .inner .post-full-comments-wrapper {
       width: 100%; }
     .site-main-single .inner #isso-thread {

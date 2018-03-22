@@ -269,11 +269,19 @@ pre code {
 						padding: 0;
 						margin: 0;
 						list-style: none;
-						pre {
-							// font-family: $basefont;
-							font-weigth: 100;
-							display: inline-block;
-							margin: 0 5px;
+						color: slategray;
+
+						a {
+							color: #111;
+						}
+						
+						span[class*='socicon-'] {
+							line-height: 26px;
+							// color: slategray;
+							font-size: 16px;
+							position: relative;
+							bottom: -2px;
+							margin-right: 4px;
 						}
 					}
 				}
