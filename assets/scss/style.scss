@@ -123,7 +123,7 @@ pre code {
 				.post-card-meta {
 					margin: 0;
 					font-size: 14px;
-					color: #666;
+					color: slategray;
 				}
 			}
 		}
@@ -143,12 +143,16 @@ pre code {
 		position: relative;
 
 		.site-title {
+			
 			color: white;
 			font-family: $bodyfont;
 			font-style: italic;
 			font-weight: normal;
 			font-size: 26px;
 			line-height: 50px;
+
+
+
 		}
 	}
 }
@@ -158,16 +162,28 @@ pre code {
 	box-sizing: border-box;
 
 	.inner {
-		width: 900px;
-		margin: 50px auto;
+		width: 100%;
+		margin: 0;
+
+		.post-full-header-wrapper {
+			background: #E54661;
+			width: 100%;
+		}
 
 		.post-full-header {
 
-			background: #E54661;
-			padding: 40px 50px 10px;
-			margin: 0 50px 50px; 
-			-webkit-border-radius: 7px;
-			border-radius: 7px;
+			width: 700px;
+			padding: 50px 0 20px;
+			margin: 0 auto; 
+			position: relative;
+
+			// left: -80px;
+			// padding-left: 150px;
+			// background-color: transparent;
+			// background-image: url("../images/astro-glyph.png");
+			// background-position: left center;
+			// background-repeat: no-repeat;
+			// background-size: auto 100px;
 
 			.post-full-meta {
 				font-family: $basefont;
@@ -185,8 +201,14 @@ pre code {
 			}
 		}
 
+		.post-full-content-wrapper {
+			width: 100%;
+		}
+
 		.post-full-content {
-			padding: 0 100px;
+			width: 700px;
+			margin: 0 auto;
+			padding: 50px 100px;
 			font-family: $bodyfont;
 			font-size: 18px;
 			line-height: 28px;
@@ -227,14 +249,15 @@ pre code {
 			}
 		}
 
-		.post-full-footer {
-
+		.post-full-footer-wrapper {
+			width: 100%;
 			background: #efefef;
-			padding: 20px 50px 50px;
-			margin: 40px 100px;
-			box-sizing: border-box;
-			-webkit-border-radius: 5px;
-			border-radius: 5px;
+		}
+
+		.post-full-footer {
+			width: 700px;
+			padding: 20px 0 50px;
+			margin: 0 auto;
 			line-height: 26px;
 			font-family: $basefont;
 
@@ -247,16 +270,23 @@ pre code {
 						margin: 0;
 						list-style: none;
 						pre {
+							// font-family: $basefont;
+							font-weigth: 100;
 							display: inline-block;
-							margin: 0 10px;
+							margin: 0 5px;
 						}
 					}
 				}
 			}
 		}
 
+		.post-full-comments-wrapper {
+			width: 100%;
+		}
+
 		#isso-thread {
-			margin: 40px 100px;
+			width: 700px;
+			margin: 40px auto;
 			box-sizing: border-box;
 
 			.textarea-wrapper {
@@ -317,7 +347,6 @@ pre code {
 	.next {
 		text-align: right;
 		order: 2;
-		// border-left: 1px solid #dedede;
 		.post-card-tile { order: 2; background: #FFA644; }
 		.post-card-content { order: 1; }
 	}
@@ -365,7 +394,7 @@ pre code {
 				.post-card-meta {
 					margin: 0;
 					font-size: 14px;
-					color: #666;
+					color: slategray;
 				}
 
 			}

@@ -89,7 +89,7 @@ a {
       .site-main-index .post-feed .post-card .post-card-content .post-card-meta {
         margin: 0;
         font-size: 14px;
-        color: #666; }
+        color: slategray; }
 
 .site-header-single {
   background: black;
@@ -111,14 +111,16 @@ a {
   flex: 1 0 100%;
   box-sizing: border-box; }
   .site-main-single .inner {
-    width: 900px;
-    margin: 50px auto; }
-    .site-main-single .inner .post-full-header {
+    width: 100%;
+    margin: 0; }
+    .site-main-single .inner .post-full-header-wrapper {
       background: #E54661;
-      padding: 40px 50px 10px;
-      margin: 0 50px 50px;
-      -webkit-border-radius: 7px;
-      border-radius: 7px; }
+      width: 100%; }
+    .site-main-single .inner .post-full-header {
+      width: 700px;
+      padding: 50px 0 20px;
+      margin: 0 auto;
+      position: relative; }
       .site-main-single .inner .post-full-header .post-full-meta {
         font-family: "Rubik";
         font-size: 20px;
@@ -130,8 +132,12 @@ a {
         margin-top: 10px;
         margin-bottom: 30px;
         color: white; }
+    .site-main-single .inner .post-full-content-wrapper {
+      width: 100%; }
     .site-main-single .inner .post-full-content {
-      padding: 0 100px;
+      width: 700px;
+      margin: 0 auto;
+      padding: 50px 100px;
       font-family: "Libre Baskerville";
       font-size: 18px;
       line-height: 28px; }
@@ -159,13 +165,13 @@ a {
         margin: 0; }
       .site-main-single .inner .post-full-content p + p {
         text-indent: 2em; }
+    .site-main-single .inner .post-full-footer-wrapper {
+      width: 100%;
+      background: #efefef; }
     .site-main-single .inner .post-full-footer {
-      background: #efefef;
-      padding: 20px 50px 50px;
-      margin: 40px 100px;
-      box-sizing: border-box;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
+      width: 700px;
+      padding: 20px 0 50px;
+      margin: 0 auto;
       line-height: 26px;
       font-family: "Rubik"; }
       .site-main-single .inner .post-full-footer .author-card-contact ul {
@@ -176,10 +182,14 @@ a {
           margin: 0;
           list-style: none; }
           .site-main-single .inner .post-full-footer .author-card-contact ul li pre {
+            font-weigth: 100;
             display: inline-block;
-            margin: 0 10px; }
+            margin: 0 5px; }
+    .site-main-single .inner .post-full-comments-wrapper {
+      width: 100%; }
     .site-main-single .inner #isso-thread {
-      margin: 40px 100px;
+      width: 700px;
+      margin: 40px auto;
       box-sizing: border-box; }
       .site-main-single .inner #isso-thread .textarea-wrapper {
         margin: 0 0 10px; }
@@ -254,4 +264,4 @@ a {
         .read-next .next .post-card .post-card-content .post-card-meta, .read-next .prev .post-card .post-card-content .post-card-meta {
           margin: 0;
           font-size: 14px;
-          color: #666; }
+          color: slategray; }

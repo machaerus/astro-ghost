@@ -21,46 +21,53 @@ into the {body} of the default.hbs template --}}
 
 		<article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
-			<header class="post-full-header">
-				<section class="post-full-meta">
-					<time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+			<div class="post-full-header-wrapper">
+				<header class="post-full-header">
+					<section class="post-full-meta">
+						<time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+					</section>
+					<h1 class="post-full-title">{{title}}</h1>
+				</header>
+			</div>
+
+			<div class="post-full-content-wrapper">
+				<section class="post-full-content">
+					{{content}}
 				</section>
-				<h1 class="post-full-title">{{title}}</h1>
-			</header>
+			</div>
 
-			<section class="post-full-content">
-				{{content}}
-			</section>
+			<div class="post-full-footer-wrapper">
+				<footer class="post-full-footer">
+					{{!-- Everything inside the #author tags pulls data from the author --}}
+					{{#author}}
 
-			<footer class="post-full-footer">
-				{{!-- Everything inside the #author tags pulls data from the author --}}
-				{{#author}}
-
-				<section class="author-card">
-					{{#if profile_image}}
-						<img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
-					{{/if}}
-					<section class="author-card-content">
-						<h4 class="author-card-name"><a href="{{url}}">{{name}}</a></h4>
-						{{#if bio}}
-							<p>{{bio}}</p>
-						{{else}}
-							<p>Read <a href="{{url}}">more posts</a> by this author.</p>
+					<section class="author-card">
+						{{#if profile_image}}
+							<img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" />
 						{{/if}}
+						<section class="author-card-content">
+							<h4 class="author-card-name"><a href="{{url}}">{{name}}</a></h4>
+							{{#if bio}}
+								<p>{{bio}}</p>
+							{{else}}
+								<p>Read <a href="{{url}}">more posts</a> by this author.</p>
+							{{/if}}
+						</section>
+						<section class="author-card-contact">
+							<ul>
+								<li>Email: <pre>machaerus{at}protonmail.com</pre></li>
+								<li>Github: <pre><a href="https://github.com/machaerus">machaerus</a></pre></li>
+								<li>Keybase: <pre><a href="https://keybase.io/machaerus">machaerus</a></pre></li>
+								<li>Last.fm: <pre><a href="https://www.last.fm/user/Fikander23">Fikander23</a></pre></li>
+							</ul>
+						</section>
 					</section>
-					<section class="author-card-contact">
-						<ul>
-							<li>Email: <pre>machaerus (at) pm.me</pre></li>
-							<li>Github: <a href="https://github.com/machaerus"><pre>machaerus</pre></a></li>
-							<li>Keybase: <pre><a href="https://keybase.io/machaerus">machaerus</a></pre></li>
-							<li>Last.fm: <pre><a href="https://www.last.fm/user/Fikander23">Fikander23</a></pre></li>
-						</ul>
-					</section>
-				</section>
 
-				{{/author}}
-			</footer>
+					{{/author}}
+				</footer>
+			</div>
 
+			<div class="post-full-comments-wrapper">
 			{{#is "post, page"}}
 				<script data-isso="https://wiruje-astrolabium.pl/isso/"
 						data-isso-avatar="false"
@@ -69,6 +76,7 @@ into the {body} of the default.hbs template --}}
 				</script>
 				<section id="isso-thread"></section>
 			{{/is}}
+			</div>	
 
 		</article>
 
@@ -102,69 +110,5 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
-<script>
 
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
-$(document).ready(function () {
-	// Start fitVids
-	var $postContent = $(".post-full-content");
-	$postContent.fitVids();
-	// End fitVids
-
-	var progressBar = document.querySelector('progress');
-	var header = document.querySelector('.floating-header');
-	var title = document.querySelector('.post-full-title');
-
-	var lastScrollY = window.scrollY;
-	var lastWindowHeight = window.innerHeight;
-	var lastDocumentHeight = $(document).height();
-	var ticking = false;
-
-	function onScroll() {
-		lastScrollY = window.scrollY;
-		requestTick();
-	}
-
-	function onResize() {
-		lastWindowHeight = window.innerHeight;
-		lastDocumentHeight = $(document).height();
-		requestTick();
-	}
-
-	function requestTick() {
-		if (!ticking) {
-			requestAnimationFrame(update);
-		}
-		ticking = true;
-	}
-
-	function update() {
-		var trigger = title.getBoundingClientRect().top + window.scrollY;
-		var triggerOffset = title.offsetHeight + 35;
-		var progressMax = lastDocumentHeight - lastWindowHeight;
-
-		// show/hide floating header
-		if (lastScrollY >= trigger + triggerOffset) {
-			header.classList.add('floating-active');
-		} else {
-			header.classList.remove('floating-active');
-		}
-
-		progressBar.setAttribute('max', progressMax);
-		progressBar.setAttribute('value', lastScrollY);
-
-		ticking = false;
-	}
-
-	window.addEventListener('scroll', onScroll, {passive: true});
-	window.addEventListener('resize', onResize, false);
-
-	update();
-
-	// $("#isso-thread input[name='author']").attr("placeholder", "Imię");
-});
-</script>
 {{/contentFor}}
