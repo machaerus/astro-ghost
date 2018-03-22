@@ -160,7 +160,7 @@ a {
       .site-main-single .inner .post-full-content pre code {
         font-family: "Libre Baskerville";
         font-style: italic;
-        padding: 100px 30px;
+        padding: 100px 0px;
         text-indent: 0 !important; }
       .site-main-single .inner .post-full-content p {
         margin: 0; }
