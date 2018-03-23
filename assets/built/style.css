@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%; }
+
 body {
   background: #fff;
   color: #333;
@@ -6,12 +9,15 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Libre Baskerville";
-  font-size: 18px; }
+  font-size: 1.8rem;
+  line-height: 28px; }
 
 a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid slategray; }
+  a:hover {
+    color: slategray; }
 
 .site-wrapper {
   display: flex;
@@ -24,19 +30,20 @@ a {
   background-image: url("../images/astro-glyph.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 280px;
   position: relative; }
   .site-header-index .site-header-content {
     position: relative;
     top: 0;
     left: 0;
     text-align: center;
-    padding: 50px;
+    padding: 56px;
     color: white; }
     .site-header-index .site-header-content h1 {
       font-family: "Libre Baskerville";
       font-style: italic;
-      font-size: 50px;
+      font-size: 5rem;
+      line-height: 84px;
       font-weight: 100; }
   .site-header-index .site-nav {
     width: 100%;
@@ -54,7 +61,7 @@ a {
     height: 100%;
     overflow-y: scroll; }
   .site-main-index .post-feed .post-card {
-    height: 150px;
+    height: 140px;
     width: 100%;
     margin: 0;
     float: left;
@@ -71,25 +78,26 @@ a {
     .site-main-index .post-feed .post-card:nth-child(5n-4) .post-card-tile {
       background: #002D40; }
     .site-main-index .post-feed .post-card:hover .post-card-content {
-      border-right: 20px solid black;
+      border-right: 5px solid black;
       background: #efefef; }
     .site-main-index .post-feed .post-card .post-card-tile {
-      flex: 0 0 150px;
+      flex: 0 0 140px;
       box-sizing: border-box; }
     .site-main-index .post-feed .post-card .post-card-content {
       flex: 1 1 auto;
-      padding: 20px 50px;
+      padding: 14px 56px;
       border-bottom: 1px solid #dedede; }
       .site-main-index .post-feed .post-card .post-card-content .post-card-content-link {
         text-decoration: none; }
         .site-main-index .post-feed .post-card .post-card-content .post-card-content-link h2 {
-          margin: 20px 0 10px 0;
+          margin: 19.6px 0 8.4px 0;
           font-weight: 500;
-          font-size: 23px;
+          line-height: 28px;
+          font-size: 2.3rem;
           font-family: "Rubik"; }
       .site-main-index .post-feed .post-card .post-card-content .post-card-meta {
         margin: 0;
-        font-size: 14px;
+        font-size: 1.4rem;
         color: slategray; }
 
 .site-header-single {
@@ -105,8 +113,9 @@ a {
       font-family: "Libre Baskerville";
       font-style: italic;
       font-weight: normal;
-      font-size: 26px;
-      line-height: 50px; }
+      font-size: 2.6rem;
+      line-height: 84px;
+      margin: 0; }
 
 .site-main-single {
   flex: 1 0 100%;
@@ -119,35 +128,35 @@ a {
       width: 100%; }
     .site-main-single .inner .post-full-header {
       width: 700px;
-      padding: 50px 0 20px;
+      padding: 42px 0 28px;
       margin: 0 auto;
       position: relative; }
       .site-main-single .inner .post-full-header .post-full-meta {
         font-family: "Rubik";
-        font-size: 20px;
+        font-size: 2rem;
         color: white; }
       .site-main-single .inner .post-full-header .post-full-title {
         font-family: "Rubik";
-        font-size: 45px;
+        font-size: 4.5rem;
         font-weight: normal;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 14px;
+        margin-bottom: 28px;
         color: white; }
     .site-main-single .inner .post-full-content-wrapper {
       width: 100%; }
     .site-main-single .inner .post-full-content {
       width: 700px;
       margin: 0 auto;
-      padding: 50px 100px;
+      padding: 56px 28px;
       font-family: "Libre Baskerville";
-      font-size: 18px;
+      font-size: 1.8rem;
       line-height: 28px; }
       .site-main-single .inner .post-full-content img {
         max-width: 100%;
-        -webkit-border-radius: 5px;
-        border-radius: 5px; }
+        -webkit-border-radius: 6px;
+        border-radius: 6px; }
       .site-main-single .inner .post-full-content hr {
-        margin: 48px 0 72px;
+        margin: 56px 0 84px;
         height: 0;
         border: 0; }
       .site-main-single .inner .post-full-content hr:before {
@@ -156,26 +165,26 @@ a {
         display: block;
         text-align: center;
         color: #bbb;
-        font-size: 36px; }
+        font-size: 3.6rem; }
       .site-main-single .inner .post-full-content pre code {
         font-family: "Libre Baskerville";
         font-style: italic;
-        padding: 100px 0px;
+        padding: 112px 0;
         text-indent: 0 !important; }
       .site-main-single .inner .post-full-content p {
         margin: 0; }
       .site-main-single .inner .post-full-content p + p {
-        text-indent: 2em; }
+        text-indent: 2rem; }
       .site-main-single .inner .post-full-content blockquote {
-        font-size: 90%; }
+        font-size: 110%; }
     .site-main-single .inner .post-full-footer-wrapper {
       width: 100%;
       background: #efefef; }
     .site-main-single .inner .post-full-footer {
       width: 700px;
-      padding: 20px 0 50px;
+      padding: 28px 0 56px;
       margin: 0 auto;
-      line-height: 26px;
+      line-height: 28px;
       font-family: "Rubik"; }
       .site-main-single .inner .post-full-footer .author-card-contact ul {
         margin: 0;
@@ -187,9 +196,11 @@ a {
           color: slategray; }
           .site-main-single .inner .post-full-footer .author-card-contact ul li a {
             color: #111; }
+            .site-main-single .inner .post-full-footer .author-card-contact ul li a:hover {
+              color: slategray; }
           .site-main-single .inner .post-full-footer .author-card-contact ul li span[class*='socicon-'] {
-            line-height: 26px;
-            font-size: 16px;
+            line-height: 28px;
+            font-size: 1.6rem;
             position: relative;
             bottom: -2px;
             margin-right: 4px; }
@@ -197,27 +208,27 @@ a {
       width: 100%; }
     .site-main-single .inner #isso-thread {
       width: 700px;
-      margin: 40px auto;
+      margin: 56px auto;
       box-sizing: border-box; }
       .site-main-single .inner #isso-thread .textarea-wrapper {
-        margin: 0 0 10px; }
+        margin: 0 0 14px; }
         .site-main-single .inner #isso-thread .textarea-wrapper .textarea {
-          padding: 1em;
+          padding: 1rem;
           font-family: "Rubik";
-          font-size: 15px;
-          line-height: 24px;
-          min-height: 100px; }
+          font-size: 1.5rem;
+          line-height: 22.4px;
+          min-height: 112px; }
       .site-main-single .inner #isso-thread .auth-section .input-wrapper {
-        margin-right: 10px; }
+        margin-right: 14px; }
         .site-main-single .inner #isso-thread .auth-section .input-wrapper input {
-          padding: 1em;
-          font-size: 15px;
-          font-family: "Rubik";
-          line-height: 24px; }
+          padding: 1rem;
+          font-size: 1.5rem;
+          line-height: 28px;
+          font-family: "Rubik"; }
       .site-main-single .inner #isso-thread .auth-section .post-action input {
-        padding: 1em;
-        line-height: 24px;
-        font-size: 15px;
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        line-height: 28px;
         font-family: "Rubik";
         background: #ddd;
         border: 0;
@@ -252,42 +263,43 @@ a {
     flex: 1 0 50%;
     box-sizing: border-box; }
     .read-next .next .post-card, .read-next .prev .post-card {
-      display: flex; }
+      display: flex;
+      height: 140px; }
       .read-next .next .post-card:hover .post-card-content, .read-next .prev .post-card:hover .post-card-content {
         background: #efefef; }
       .read-next .next .post-card .post-card-tile, .read-next .prev .post-card .post-card-tile {
-        flex: 0 0 150px;
+        flex: 0 0 140px;
         box-sizing: border-box; }
       .read-next .next .post-card .post-card-content, .read-next .prev .post-card .post-card-content {
         flex: 1 1 auto;
-        padding: 40px 50px;
+        padding: 19.6px 42px;
         border-top: 1px solid #dedede; }
         .read-next .next .post-card .post-card-content .post-card-content-link, .read-next .prev .post-card .post-card-content .post-card-content-link {
           text-decoration: none; }
           .read-next .next .post-card .post-card-content .post-card-content-link h2, .read-next .prev .post-card .post-card-content .post-card-content-link h2 {
-            margin: 10px 0 10px 0;
+            margin: 8.4px 0;
             font-weight: 500;
-            font-size: 23px;
+            font-size: 2.3rem;
             font-family: "Rubik"; }
         .read-next .next .post-card .post-card-content .post-card-meta, .read-next .prev .post-card .post-card-content .post-card-meta {
           margin: 0;
-          font-size: 14px;
+          font-size: 1.4rem;
           color: slategray; }
 
 .site-full-colophon {
   background: black;
-  padding: 24px 36px;
+  padding: 28px 42px;
   box-sizing: border-box;
   flex: 1 0 100%;
   display: flex;
   color: white;
-  font-size: 16px; }
+  font-size: 1.6rem; }
   .site-full-colophon .copyright-info {
     flex: 1 0 50%;
-    line-height: 24px; }
+    line-height: 28px; }
   .site-full-colophon .rss {
     flex: 1 0 50%;
-    line-height: 24px;
+    line-height: 28px;
     text-align: right; }
     .site-full-colophon .rss a {
       text-decoration: none;
