@@ -138,7 +138,8 @@ a {
       .site-main-single .inner .post-full-header .post-full-title {
         font-family: "Rubik";
         font-size: 4.5rem;
-        font-weight: normal;
+        font-weight: 300;
+        line-height: 56px;
         margin-top: 14px;
         margin-bottom: 28px;
         color: white; }

@@ -91,7 +91,6 @@ a {
 	.post-feed {
 
 		.post-card {
-
 			height: 5 * $baseline;
 			width: 100%;
 			margin: 0;
@@ -203,7 +202,9 @@ a {
 			.post-full-title {
 				font-family: $basefont;
 				font-size: 4.5rem;
-				font-weight: normal;
+				font-weight: 300;
+				// font-style: italic;
+				line-height: 2*$baseline;
 				margin-top: .5*$baseline;
 				margin-bottom: $baseline;
 				color: white;
