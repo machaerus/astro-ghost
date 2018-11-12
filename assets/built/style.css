@@ -8,7 +8,8 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: "Libre Baskerville";
+  font-family: "Bona Nova";
+  font-weight: 300;
   font-size: 1.8rem;
   line-height: 28px; }
 
@@ -40,11 +41,11 @@ a {
     padding: 56px;
     color: white; }
     .site-header-index .site-header-content h1 {
-      font-family: "Libre Baskerville";
-      font-style: italic;
-      font-size: 5rem;
+      font-family: "Bona Title";
+      font-size: 4.6rem;
       line-height: 84px;
-      font-weight: 100; }
+      font-weight: 300;
+      font-variant: common-ligatures small-caps; }
   .site-header-index .site-nav {
     width: 100%;
     position: absolute;
@@ -97,8 +98,9 @@ a {
           font-family: "Rubik"; }
       .site-main-index .post-feed .post-card .post-card-content .post-card-meta {
         margin: 0;
-        font-size: 1.4rem;
-        color: slategray; }
+        font-size: 1.6rem;
+        color: slategray;
+        font-variant: common-ligatures small-caps; }
 
 .site-header-single {
   background: black;
@@ -110,9 +112,8 @@ a {
     position: relative; }
     .site-header-single .inner .site-title {
       color: white;
-      font-family: "Libre Baskerville";
-      font-style: italic;
-      font-weight: normal;
+      font-family: "Bona Title";
+      font-weight: 500;
       font-size: 2.6rem;
       line-height: 84px;
       margin: 0; }
@@ -124,7 +125,7 @@ a {
     width: 100%;
     margin: 0; }
     .site-main-single .inner .post-full-header-wrapper {
-      background: #E54661;
+      background: #eee;
       width: 100%; }
     .site-main-single .inner .post-full-header {
       width: 700px;
@@ -134,7 +135,7 @@ a {
       .site-main-single .inner .post-full-header .post-full-meta {
         font-family: "Rubik";
         font-size: 2rem;
-        color: white; }
+        color: black; }
       .site-main-single .inner .post-full-header .post-full-title {
         font-family: "Rubik";
         font-size: 4.5rem;
@@ -142,16 +143,22 @@ a {
         line-height: 56px;
         margin-top: 14px;
         margin-bottom: 28px;
-        color: white; }
+        color: black; }
     .site-main-single .inner .post-full-content-wrapper {
       width: 100%; }
     .site-main-single .inner .post-full-content {
       width: 700px;
       margin: 0 auto;
       padding: 56px 28px;
-      font-family: "Libre Baskerville";
-      font-size: 1.8rem;
+      font-family: "Bona Nova";
+      font-size: 1.9rem;
       line-height: 28px; }
+      .site-main-single .inner .post-full-content h1, .site-main-single .inner .post-full-content h2, .site-main-single .inner .post-full-content h3,
+      .site-main-single .inner .post-full-content h4, .site-main-single .inner .post-full-content h5, .site-main-single .inner .post-full-content h6 {
+        font-family: "Bona Title";
+        font-weight: 500; }
+      .site-main-single .inner .post-full-content h2 {
+        font-size: 3.4rem; }
       .site-main-single .inner .post-full-content img {
         max-width: 100%;
         -webkit-border-radius: 6px;
@@ -162,13 +169,13 @@ a {
         border: 0; }
       .site-main-single .inner .post-full-content hr:before {
         content: '\2767';
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: "Bona Title";
         display: block;
         text-align: center;
         color: #bbb;
         font-size: 3.6rem; }
       .site-main-single .inner .post-full-content pre code {
-        font-family: "Libre Baskerville";
+        font-family: "Bona Nova";
         font-style: italic;
         padding: 112px 0;
         text-indent: 0 !important; }
@@ -177,7 +184,8 @@ a {
       .site-main-single .inner .post-full-content p + p {
         text-indent: 2rem; }
       .site-main-single .inner .post-full-content blockquote {
-        font-size: 110%; }
+        font-size: 115%;
+        margin: 28px; }
     .site-main-single .inner .post-full-footer-wrapper {
       width: 100%;
       background: #efefef; }
@@ -284,8 +292,9 @@ a {
             font-family: "Rubik"; }
         .read-next .next .post-card .post-card-content .post-card-meta, .read-next .prev .post-card .post-card-content .post-card-meta {
           margin: 0;
-          font-size: 1.4rem;
-          color: slategray; }
+          font-size: 1.6rem;
+          color: slategray;
+          font-variant: common-ligatures small-caps; }
 
 .site-full-colophon {
   background: black;
@@ -294,7 +303,7 @@ a {
   flex: 1 0 100%;
   display: flex;
   color: white;
-  font-size: 1.6rem; }
+  font-size: 1.9rem; }
   .site-full-colophon .copyright-info {
     flex: 1 0 50%;
     line-height: 28px; }
